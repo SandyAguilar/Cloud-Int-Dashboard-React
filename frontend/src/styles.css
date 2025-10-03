@@ -1,0 +1,18 @@
+:root { --bg:#0b1020; --panel:#121a33; --muted:#8ea0c0; --text:#f3f6ff; --border:#1f2a4c; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,Inter,Segoe UI,Arial; }
+.layout { display:flex; min-height:100vh; }
+.sidebar { width:220px; background:var(--panel); border-right:1px solid var(--border); padding:16px; }
+.sidebar h2 { margin:0 0 14px; font-size:16px; }
+.sidebar a { display:block; color:var(--muted); text-decoration:none; padding:8px; border-radius:8px; }
+.sidebar a.active { background:#0f1730; color:#fff; }
+.content { flex:1; display:flex; flex-direction:column; }
+.topbar { display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); padding:12px 16px; }
+.topbar h1 { margin:0; font-size:18px; }
+.tabs a { color:var(--muted); margin-left:12px; text-decoration:none; }
+.tabs a.active { color:#fff; border-bottom:2px solid #7aa2ff; }
+.grid { display:grid; gap:14px; }
+.cols-3 { grid-template-columns:repeat(3,1fr); }
+.panel { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:14px; }
+.tile .label { color:var(--muted); font-size:12px; }
+.tile .value { font-size:22px; font-weight:600; }
+.error { color:#ff9f9f; }

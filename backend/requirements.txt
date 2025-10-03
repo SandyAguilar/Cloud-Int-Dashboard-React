@@ -1,0 +1,9 @@
+# Web framework
+flask
+
+# Google Cloud SDKs
+google-cloud-bigquery
+google-cloud-core
+
+python-dotenv
+
